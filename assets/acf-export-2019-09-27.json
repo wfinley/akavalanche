@@ -1,0 +1,945 @@
+[
+    {
+        "key": "group_5d88d9a65b77e",
+        "title": "Forecast - Accidents",
+        "fields": [
+            {
+                "key": "field_5d88fd4ba2a59",
+                "label": "Accident Date",
+                "name": "cnfaic_accidents_date",
+                "type": "date_picker",
+                "instructions": "Insert accident date.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "m\/d\/Y",
+                "return_format": "d\/m\/Y",
+                "first_day": 1
+            },
+            {
+                "key": "field_5d88d9de5d67b",
+                "label": "Fatalities",
+                "name": "cnfaic_accidents_killed",
+                "type": "number",
+                "instructions": "Insert 0 if no fatalities.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5d891975a93c2",
+                "label": "Activity",
+                "name": "cnfaic_accidents_activity",
+                "type": "select",
+                "instructions": "Edit custom posts if activity not listed.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Climb": "Climb",
+                    "Hike": "Hike",
+                    "Other": "Other",
+                    "Ski": "Ski",
+                    "Snowboard": "Snowboard",
+                    "Snowmachine": "Snowmachine",
+                    "Snowshoe": "Snowshoe"
+                },
+                "default_value": [],
+                "allow_null": 1,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5d894e1ff330e",
+                "label": "Region",
+                "name": "cnfaic_accidents_region",
+                "type": "select",
+                "instructions": "Select closest region.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Chugach State Park": "Chugach State Park",
+                    "Cooper Landing": "Cooper Landing",
+                    "Girdwood": "Girdwood",
+                    "Hatcher Pass": "Hatcher Pass",
+                    "Other Regions": "Other Regions",
+                    "Portage \/ Placer": "Portage \/ Placer",
+                    "Seward": "Seward",
+                    "Summit": "Summit",
+                    "Turnagain": "Turnagain"
+                },
+                "default_value": [],
+                "allow_null": 1,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5d88da015d67c",
+                "label": "Report",
+                "name": "cnfaic_accidents_report",
+                "type": "file",
+                "instructions": "Upload report if available.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "library": "all",
+                "min_size": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5d88de07cf681",
+                "label": "Summary",
+                "name": "cnfaic_accidents_excerpt",
+                "type": "textarea",
+                "instructions": "Insert brief summary.  i.e. \"Two skiers caught, one buried and killed.\"",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": ""
+            },
+            {
+                "key": "field_5d8cf3d7e427d",
+                "label": "Map",
+                "name": "cnfaic_accidents_map",
+                "type": "google_map",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "center_lat": "60.787899",
+                "center_lng": "-149.173918",
+                "zoom": 10,
+                "height": 400
+            },
+            {
+                "key": "field_5d8933e5d85c5",
+                "label": "Image(s)",
+                "name": "cnfaic_accidents_gallery",
+                "type": "gallery",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "insert": "append",
+                "library": "all",
+                "min": "",
+                "max": "",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "forecast_acccidents"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5cd09bcdc21c1",
+        "title": "Forecast - Turnagain Pass",
+        "fields": [
+            {
+                "key": "field_5cd0fc4c29a99",
+                "label": "Date",
+                "name": "akavalanche_date",
+                "type": "date_picker",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "m\/d\/Y",
+                "return_format": "m\/d\/Y",
+                "first_day": 1,
+                "show_column": 1,
+                "show_column_sortable": 1,
+                "show_column_weight": 1000,
+                "allow_quickedit": 0,
+                "allow_bulkedit": 0
+            },
+            {
+                "key": "field_5cd0ffa190482",
+                "label": "Author",
+                "name": "akavalanche_author",
+                "type": "select",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "CNFAIC Staff": "CNFAIC Staff",
+                    "Wendy Wagner": "Wendy Wagner",
+                    "Heather Thamm": "Heather Thamm",
+                    "Aleph Johnston-Bloom": "Aleph Johnston-Bloom",
+                    "Graham Predeger": "Graham Predeger"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "show_column": 1,
+                "show_column_sortable": 1,
+                "show_column_weight": 1000,
+                "allow_quickedit": 0,
+                "allow_bulkedit": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5cd1d004e7d99",
+                "label": "Bottom Line",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5cd363c3674db",
+                "label": "Rating - Alpine",
+                "name": "akavalanche_rating_high",
+                "type": "select",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "No Rating": "No Rating",
+                    "Extreme": "Extreme",
+                    "High": "High",
+                    "Considerable": "Considerable",
+                    "Moderate": "Moderate",
+                    "Low": "Low"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "show_column": 1,
+                "show_column_sortable": 0,
+                "show_column_weight": 1000,
+                "allow_quickedit": 0,
+                "allow_bulkedit": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5cd364127feb0",
+                "label": "Rating - Treeline",
+                "name": "akavalanche_rating_middle",
+                "type": "select",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "No Rating": "No Rating",
+                    "Extreme": "Extreme",
+                    "High": "High",
+                    "Considerable": "Considerable",
+                    "Moderate": "Moderate",
+                    "Low": "Low"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "show_column": 1,
+                "show_column_sortable": 0,
+                "show_column_weight": 1000,
+                "allow_quickedit": 0,
+                "allow_bulkedit": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5cd3643c7feb1",
+                "label": "Rating - Below Treeline",
+                "name": "akavalanche_rating_low",
+                "type": "select",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "No Rating": "No Rating",
+                    "Extreme": "Extreme",
+                    "High": "High",
+                    "Considerable": "Considerable",
+                    "Moderate": "Moderate",
+                    "Low": "Low"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "show_column": 1,
+                "show_column_sortable": 0,
+                "show_column_weight": 1000,
+                "allow_quickedit": 0,
+                "allow_bulkedit": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5d8403b05b329",
+                "label": "Avalanche Warning",
+                "name": "akavalanche_avewarning",
+                "type": "select",
+                "instructions": "Display warning or high danger banner with date & travel message .",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Avalanche Warning": "Avalanche Warning",
+                    "High Avalanche Danger": "High Avalanche Danger"
+                },
+                "default_value": [],
+                "allow_null": 1,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5d8407909f50f",
+                "label": "Avalanche Warning Time",
+                "name": "akavalanche_avewarning_time",
+                "type": "date_time_picker",
+                "instructions": "If warning banner is displayed insert the date and time.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "F j, Y g:i a",
+                "return_format": "F j, Y g:i a",
+                "first_day": 1
+            },
+            {
+                "key": "field_5cd9ad3e7ebf6",
+                "label": "Bottom Line Icon",
+                "name": "akavalanche_btmline_icon",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "icon-avalanche.gif": "Avalanche",
+                    "icon-nodata.gif": "No Rating",
+                    "icon-obs.gif": "Observations",
+                    "icon-special.gif": "Special Announcement",
+                    "icon-weather.gif": "Weather",
+                    "icon-extreme.gif": "Travel not recommended",
+                    "icon-moderate.gif": "Elevated Caution",
+                    "icon-low.gif": "Normal Caution",
+                    "Springtime-high-low.png": "Springtime Low \/ High"
+                },
+                "default_value": [],
+                "allow_null": 1,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "show_column": 0,
+                "show_column_sortable": 0,
+                "show_column_weight": 1000,
+                "allow_quickedit": 0,
+                "allow_bulkedit": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5cd1cfa2e4a2f",
+                "label": "",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "new_lines": "",
+                "esc_html": 0
+            },
+            {
+                "key": "field_5cd1d1ae729c9",
+                "label": "Announcement",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5cd0c9b552596",
+                "label": "Special Announcement",
+                "name": "akavalanche_special_announcement",
+                "type": "wysiwyg",
+                "instructions": "Note: Special announcement auto-hides after 60 days.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "visual",
+                "toolbar": "full",
+                "media_upload": 0,
+                "delay": 0
+            },
+            {
+                "key": "field_5cd0c1fae66e8",
+                "label": "Problem 1",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5cd0c7f48c857",
+                "label": "Problem 1 Icon",
+                "name": "akavalanche_problem1_icon",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "NOICON.gif": "No Icon",
+                    "Cornice.png": "Cornice",
+                    "DeepPersistentSlabs.png": "Deep Persistent Slabs",
+                    "Glide.png": "Glide",
+                    "LooseDry.png": "Loose Dry",
+                    "LooseWet.png": "Loose Wet",
+                    "PersistentSlabs.png": "Persistent Slabs",
+                    "Springtime-high-low.png": "Springtime High Low",
+                    "StormSlabs.png": "Storm Slabs",
+                    "WetSlabs.png": "Wet Slabs",
+                    "WindSlabs.png": "Wind Slabs"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "show_column": 0,
+                "show_column_sortable": 0,
+                "show_column_weight": 1000,
+                "allow_quickedit": 0,
+                "allow_bulkedit": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5cd0c7fe8c858",
+                "label": "Problem 1 Chance",
+                "name": "akavalanche_problem1_chance",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "0": "No Icon",
+                    "5": "Almost Certain",
+                    "4": "Very Likely",
+                    "3": "Likely",
+                    "2": "Possible",
+                    "1": "Unlikely"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "show_column": 0,
+                "show_column_sortable": 0,
+                "show_column_weight": 1000,
+                "allow_quickedit": 0,
+                "allow_bulkedit": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5cd0c8138c859",
+                "label": "Problem 1 Size",
+                "name": "akavalanche_problem1_size",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "0": "No Icon",
+                    "4": "Historic",
+                    "34": "Very Large \/ Historic",
+                    "3": "Very Large",
+                    "23": "Large \/ Very Large",
+                    "2": "Large",
+                    "12": "Small \/ Large",
+                    "1": "Small"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "show_column": 0,
+                "show_column_sortable": 0,
+                "show_column_weight": 1000,
+                "allow_quickedit": 0,
+                "allow_bulkedit": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5cd0c820736f5",
+                "label": "Problem 1",
+                "name": "akavalanche_problem1",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_5cd0c7b0e01df",
+                "label": "Problem 2",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5cd0c2de8bcc9",
+                "label": "Problem 2 Icon",
+                "name": "akavalanche_problem2_icon",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "NOICON.gif": "No Icon",
+                    "Cornice.png": "Cornice",
+                    "DeepPersistentSlabs.png": "Deep Persistent Slabs",
+                    "Glide.png": "Glide",
+                    "LooseDry.png": "Loose Dry",
+                    "LooseWet.png": "Loose Wet",
+                    "PersistentSlabs.png": "Persistent Slabs",
+                    "Springtime-high-low.png": "Springtime High Low",
+                    "StormSlabs.png": "Storm Slabs",
+                    "WetSlabs.png": "Wet Slabs",
+                    "WindSlabs.png": "Wind Slabs"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "show_column": 0,
+                "show_column_sortable": 0,
+                "show_column_weight": 1000,
+                "allow_quickedit": 0,
+                "allow_bulkedit": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5cd0c4170b7bf",
+                "label": "Problem 2 Chance",
+                "name": "akavalanche_problem2_chance",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "0": "No Icon",
+                    "5": "Almost Certain",
+                    "4": "Very Likely",
+                    "3": "Likely",
+                    "2": "Possible",
+                    "1": "Unlikely"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "show_column": 0,
+                "show_column_sortable": 0,
+                "show_column_weight": 1000,
+                "allow_quickedit": 0,
+                "allow_bulkedit": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5cd0c4a931ede",
+                "label": "Problem 2 Size",
+                "name": "akavalanche_problem2_size",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "0": "No Icon",
+                    "4": "Historic",
+                    "34": "Very Large \/ Historic",
+                    "3": "Very Large",
+                    "23": "Large \/ Very Large",
+                    "2": "Large",
+                    "12": "Small \/ Large",
+                    "1": "Small"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "show_column": 0,
+                "show_column_sortable": 0,
+                "show_column_weight": 1000,
+                "allow_quickedit": 0,
+                "allow_bulkedit": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5cd0c2bfa14ed",
+                "label": "Problem 2",
+                "name": "akavalanche_problem2",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_5cd0c91c0742e",
+                "label": "Additional Concerns",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5cd0c92e0742f",
+                "label": "Additional Concerns Icon",
+                "name": "akavalanche_additional_icon",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "NOICON.gif": "No Icon",
+                    "Cornice.png": "Cornice",
+                    "DeepPersistentSlabs.png": "Deep Persistent Slabs",
+                    "Glide.png": "Glide",
+                    "LooseDry.png": "Loose Dry",
+                    "LooseWet.png": "Loose Wet",
+                    "PersistentSlabs.png": "Persistent Slabs",
+                    "Springtime-high-low.png": "Springtime High Low",
+                    "StormSlabs.png": "Storm Slabs",
+                    "WetSlabs.png": "Wet Slabs",
+                    "WindSlabs.png": "Wind Slabs"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "show_column": 0,
+                "show_column_sortable": 0,
+                "show_column_weight": 1000,
+                "allow_quickedit": 0,
+                "allow_bulkedit": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5cd0c95207430",
+                "label": "Additional Concerns",
+                "name": "akavalanche_additional",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_5cd0cae15df1b",
+                "label": "Weather",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5cd0caf25df1c",
+                "label": "Weather",
+                "name": "akavalanche_weather",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "<p><br \/><br \/><\/p>\r\n<h4>PRECIPITATION 24-hour data (6am - 6am)<\/h4>\r\n<table width=\"100%\" border=\"1\" cellspacing=\"0\" cellpadding=\"3\">\r\n<tbody>\r\n<tr>\r\n<td bgcolor=\"#cccccc\" width=\"20%\">&nbsp;<\/td>\r\n<td align=\"center\" bgcolor=\"#cccccc\" width=\"20%\"><strong>Temp Avg (F)<\/strong><\/td>\r\n<td align=\"center\" bgcolor=\"#cccccc\" width=\"20%\"><strong>Snow (in)<\/strong><\/td>\r\n<td align=\"center\" bgcolor=\"#cccccc\" width=\"20%\"><strong>Water (in)<\/strong><\/td>\r\n<td align=\"center\" bgcolor=\"#cccccc\" width=\"20%\"><strong>Snow Depth (in)<\/strong><\/td>\r\n<\/tr>\r\n<tr>\r\n<td><strong>Center Ridge (1880')<\/strong><\/td>\r\n<td align=\"center\">&nbsp;<\/td>\r\n<td align=\"center\">&nbsp;<\/td>\r\n<td align=\"center\">&nbsp;<\/td>\r\n<td align=\"center\">&nbsp;<\/td>\r\n<\/tr>\r\n<tr>\r\n<td><strong>Summit Lake (1400')<\/strong><\/td>\r\n<td align=\"center\">&nbsp;<\/td>\r\n<td align=\"center\">&nbsp;<\/td>\r\n<td align=\"center\">&nbsp;<\/td>\r\n<td align=\"center\">&nbsp;<\/td>\r\n<\/tr>\r\n<tr>\r\n<td><strong>Alyeska Mid (1700')<\/strong><\/td>\r\n<td align=\"center\">&nbsp;<\/td>\r\n<td align=\"center\">&nbsp;<\/td>\r\n<td align=\"center\">&nbsp;<\/td>\r\n<td align=\"center\">&nbsp;<\/td>\r\n<\/tr>\r\n<\/tbody>\r\n<\/table>\r\n<h4>RIDGETOP 24-hour data (6am - 6am)<\/h4>\r\n<table width=\"100%\" border=\"1\" cellspacing=\"0\" cellpadding=\"3\">\r\n<tbody>\r\n<tr>\r\n<td bgcolor=\"#cccccc\" width=\"20%\">&nbsp;<\/td>\r\n<td align=\"center\" bgcolor=\"#cccccc\" width=\"20%\"><strong>Temp Avg (F)<\/strong><\/td>\r\n<td align=\"center\" bgcolor=\"#cccccc\" width=\"20%\"><strong>Wind Dir<\/strong><\/td>\r\n<td align=\"center\" bgcolor=\"#cccccc\" width=\"20%\"><strong>Wind Avg (mph)<\/strong><\/td>\r\n<td align=\"center\" bgcolor=\"#cccccc\" width=\"20%\"><strong>Wind Gust (mph)<\/strong><\/td>\r\n<\/tr>\r\n<tr>\r\n<td><strong>Sunburst (3812')<\/strong><\/td>\r\n<td align=\"center\">&nbsp;<\/td>\r\n<td align=\"center\">&nbsp;<\/td>\r\n<td align=\"center\">&nbsp;<\/td>\r\n<td align=\"center\">&nbsp;<\/td>\r\n<\/tr>\r\n<tr>\r\n<td><strong>Seattle Ridge (2400')<\/strong><\/td>\r\n<td align=\"center\">&nbsp;<\/td>\r\n<td align=\"center\">&nbsp;<\/td>\r\n<td align=\"center\">&nbsp;<\/td>\r\n<td align=\"center\">&nbsp;<\/td>\r\n<\/tr>\r\n<\/tbody>\r\n<\/table>",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "forecast_zone1"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "page_attributes",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": ""
+    }
+]
